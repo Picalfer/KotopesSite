@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <title>HoFoAn</title>
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>HoFoAn</span>
+        </div>
+        <div Id="about">
+            <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+            <a href="#" title="Возможности" onclick="slowScroll('#price')">Стоимость</a>
+            <a href="#" title="Преимущества" onclick="slowScroll('#overview')">Преимущества</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+        </div>
+    </header>
+    <div id="top">
+        <h1>Гостиница</h1>
+        <h3>для животных</h3>
+    </div>
+    <div id="main">
+        <div class="portfolio-wrap">
+            <div class="portfolio-item">
+                <div class="portfolio-item-wrap">
+                    <a href="">
+                        <img src="assets/images/bluecat.png">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-heading">
+                                <h3>Кого заселяем</h3>
+                            </div>
+                            <ul>
+                                <li>Клинически здоровых домашних питомцев.</li>
+                                <li>С любым рационом питания, в том числе натуральным</li>
+                                <li>Требующих особый уход НЕ инфекционного происхождения</li>
+                                <li>Мы НЕ принимаем питомцев с любыми признаками проявления инфекционных заболеваний
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-item-wrap">
+                    <a href="">
+                        <img src="assets/images/catdog.png">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-heading">
+                                <h3>Что взять с собой</h3>
+                            </div>
+                            <ul>
+                                <li>Питомца</li>
+                                <li>Корм на период пребывания</li>
+                                <li>Миску, совок, лоток или приобрести новые предметы ухода у нас</li>
+                                <li>Любимые игрушки, лежанку, домик, когтеточку по желанию</li>
+                                <li>Наполнитель на период пребывания или приобрести его у нас</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-item-wrap">
+                    <a href="">
+                        <img src="assets/images/dogdog.png">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-heading">
+                                <h3>Условия бронирования</h3>
+                            </div>
+                            <ul>
+                                <li>На сайте онлайн, по телефону</li>
+                                <li>Оплата наличными или картой в момент заселения животного</li>
+                                <li>Перед бронированием Вы можете совершить гостевой визит</li>
+                                <li>Период проживания от 1 дня. День заселения и выселения оплачиваются полной
+                                    стоимостью</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="price">
+        <div class="intro">
+            <h2>Стоимость</h2>
+            <h2>наших услуг</h2>
+        </div>
+        <div class="text">
+            <h3>Здесь вы можете узнать о ценах на наши услуги</h3><br>
+            <button class="floating-button">Стоимость</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2>Номер для собак</h2><br>
+            <p>от 1 до 10 кг — 600 ₽</p>
+            <p>от 10 до 20 кг — 800 ₽</p>
+            <p>от 20 до 30 кг — 900 ₽</p>
+            <p>от 30 до 40 кг — 1 000 ₽</p><br>
+            <h2>Номер для кошек</h2><br>
+            <p>Номер стандарт — 300 ₽</p>
+            <p>Номер люкс — 700 ₽</p>
+            <p>Номер люкс для 2 кошек — 900 ₽</p>
+            <p>Номер люкс для 3 кошек — 1 100 ₽</p><br>
+            <h2>Номер для грызунов, птиц и т.д.</h2><br>
+            <p>Номер стандарт — 300 ₽</p>
+        </div>
+    </div>
+    <div id="overview">
+        <h2>Преимущества</h2>
+        <h4>у нас все самое лучшее для ващих питомцев</h4>
+
+        <div class="img">
+            <img src="assets/images/kotenok.png" alt="">
+            <span>Заботливые зооняни</span>
+        </div>
+
+        <div class="img">
+            <img src="assets/images/vetdog.png" alt="">
+            <span>Квалифицированные ветеринары</span>
+        </div>
+
+        <div class="img">
+            <img src="assets/images/cameracat.png" alt="">
+            <span>Видеонаблюдение</span>
+        </div>
+
+        <div class="img">
+            <img src="assets/images/photocat.png" alt="">
+            <span>Ежедневный фотоотчет</span>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <center>
+            <h5>Запись</h5>
+        </center>
+        <form id="form_input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+            <label for="email">Электронная почта <span>*</span></label><br>
+            <input type="text" placeholder="Введите электронную почту" name="email" id="email"><br>
+            <label for="message">Номер телефона<span>*</span></label><br>
+            <input type="text" placeholder="Введите ваш номер телефона" name="number" id="number"><br>
+            <label for="message">О питомце<span>*</span></label><br>
+            <textarea placeholder="Расскажите о вашем питомце" name="message" id="message"></textarea><br>
+            <div id="mess_send" class="btn">Отправить</div>
+        </form>
+    </div>
+
+    <div id="faq">
+        <div>
+            <span class="title">Оплата</span><br>
+            <span class="heading">Как будет проходить оплата</span><br>
+            <p>Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем:
+
+                МИР;
+                VISA International;
+                Mastercard Worldwide
+                Оплату банковской картой Вы можете произвести на месте в момент доставки животного!</p>
+        </div>
+        <div>
+            <span class="title">Информация</span><br>
+            <span class="heading">Что входит в услуги отеля</span><br>
+            <p>Предоставляем услуги по проживанию питомцев на период отпуска, командировки, болезни, ремонта, переезда
+                владельца.
+                Наши гости — это котики, собачки мелких пород, кролики, грызуны, птицы, и рыбки.</p>
+        </div>
+        <div>
+            <span class="title">Контакты</span><br>
+            <span class="heading">Наши контакты</span><br>
+            <p>+79999999999 <br>
+                hofoan@outlook.com <br>
+                Ростов-на-Дону, пр. Коммунистический, 12</p>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+    <script>
+        var modal = document.querySelector(".modal");
+        var trigger = document.querySelector(".floating-button");
+        var closeButton = document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
+    </script>
+</body>
+</html>

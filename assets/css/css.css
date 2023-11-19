@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 2000px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: TrebuchetMS, Helvetica, serif;
+}
+
+head {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about>a {
+    color: white
+}
+
+#about>a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about>a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: white;
+    border-bottom: 1px solid silver;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header.fixed #logo {
+    color: #343434
+}
+
+.fixed #about a {
+    color: #343434
+}
+
+.fixed #about a:hover {
+    color: #7c7c7c
+}
+
+#top {
+    width: 100%;
+    height: 1000px;
+    background-image: url('/assets/images/dogcatbackground.png');
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+#top h1 {
+    padding-top: 20%;
+    font-family: 'Montserrat';
+    font-size: 3em;
+}
+
+#top h3 {
+    color: #ccc;
+    font-family: 'Montserrat';
+}
+
+#price {
+    padding: 100px 20%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+#price div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#price h2 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#price h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #000000;
+}
+
+
+#overview {
+    float: left;
+    background-image: url('/assets/images/catdogback.png');
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#overview h2 {
+    font-size: 4em
+}
+
+#overview h4 {
+    color: #a0a0a0;
+    font-size: 1.5em
+}
+
+#overview .img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+    margin-left: 18%;
+}
+
+#overview img {
+    background-color: #2e3a44;
+    background-blend-mode: screen;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#overview span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#contacts {
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid white;
+    background: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Helvetica', serif;
+    font-weight: lighter;
+}
+
+#contacts h5 {
+    font-size: 3em;
+    color: #4f4f4f
+}
+
+#form_input {
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input label {
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Helvetica', serif;
+}
+
+#form_input label>span {
+    color: rosybrown;
+}
+
+#form_input input,
+#form_input textarea {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 20px 2%;
+    border-radius: 10px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+
+#form_input input,
+#form_input textarea:focus {
+    border-color: black;
+}
+
+.btn {
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #f56e6e;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Helvetica', serif;
+}
+
+.btn:hover {
+    background-color: crimson;
+}
+
+#faq {
+    background-color: white;
+    border-top: 2px #7c7c7c;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+}
+
+#faq .title {
+    font-weight: lighter;
+    color: #4f1c75;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+#faq .heading {
+    color: #7c7c7c;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#faq p {
+    font-family: Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    font-size: 0.9em;
+    margin-bottom: 40px;
+}
+
+#main {
+    width: 100%;
+    height: 800px;
+    background-image: url("https://phonoteka.org/uploads/posts/2022-01/1642689598_1-phonoteka-org-p-fon-dlya-prezentatsii-zhivotnie-1.jpg");
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.floating-button {
+    text-decoration: none;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    margin: 0 auto;
+    display: block;
+}
+
+.floating-button:hover {
+    background: #d32ee5;
+    box-shadow: 0 15px 20px rgba(168, 46, 229, 0.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.modal p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #6e6e6e;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.portfolio-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 7.5%;
+}
+
+.portfolio-item {
+    padding: 10px;
+}
+
+.portfolio-item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.portfolio-item-wrap {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background: black;
+    color: white;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    opacity: .75;
+    transition: .5s ease-in-out;
+}
+
+.portfolio-item-inner {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    right: 7%;
+    bottom: 45%;
+    border: 1px solid white;
+    border-width: 0 1px 1px;
+    transition: .4s ease-in-out;
+}
+
+.portfolio-heading {
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.portfolio-heading h3 {
+    font-family: 'Pattaya', sans-serif;
+    font-weight: normal;
+    display: table;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+.portfolio-heading h3:before,
+.portfolio-heading h3:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background: white;
+}
+
+.portfolio-heading h3:before {
+    left: -50px;
+}
+
+.portfolio-heading h3:after {
+    right: -50px;
+}
+
+.portfolio-item-inner ul {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    opacity: 0;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    transition: .4s ease-in-out;
+}
+
+.portfolio-item-inner li {
+    position: relative;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-bottom: 4px;
+}
+
+.portfolio-item-inner li:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    bottom: -4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 10px 0 0 white, -10px 0 0 white;
+}
+
+.portfolio-item-inner li:last-child:after {
+    content: none;
+}
+
+.portfolio-item:hover img {
+    opacity: 0.45;
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-item-inner {
+    top: 7%;
+    bottom: 7%;
+}
+
+.portfolio-item:hover ul {
+    opacity: 1;
+    transition-delay: .5s;
+}
