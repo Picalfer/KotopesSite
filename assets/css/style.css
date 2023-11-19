@@ -318,7 +318,11 @@ h5 {
     width: 60%;
     height: 700px;
     margin: auto;
-    margin-top: 40px;
+    padding-top: 40px;
+}
+
+#services-bg {
+    background-color: lightgray;
 }
 
 #services h2 {
@@ -338,6 +342,7 @@ h5 {
     height: 230px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
+    background-color: white;
 }
 
 .services-card img {
@@ -352,6 +357,39 @@ h5 {
     height: 15%;
     text-align: center;
     font-size: 18px;
+}
+
+#about-us {
+    height: 600px;
+    width: 60%;
+    padding-top: 40px;
+    margin: auto;
+}
+
+#about-us img {
+    float: left;
+    width: 290px;
+    height: 90%;
+}
+
+#about-us-text {
+    margin-left: 300px;
+}
+
+#about-us-text h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paragraph-text {
+    display: inline-block;
+    width: 50%;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.paragraph-text span {
+    font-weight: bold;
 }
 
 #main {
