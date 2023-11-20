@@ -360,16 +360,16 @@ h5 {
 }
 
 #about-us {
-    height: 600px;
+    height: 500px;
     width: 60%;
     padding-top: 40px;
     margin: auto;
 }
 
-#about-us img {
+#left-img-about {
     float: left;
-    width: 290px;
-    height: 90%;
+    width: 240px;
+    height: 70%;
 }
 
 #about-us-text {
@@ -383,7 +383,7 @@ h5 {
 
 .paragraph-text {
     display: inline-block;
-    width: 50%;
+    width: 70%;
     line-height: 20px;
     margin-top: 20px;
 }
@@ -444,7 +444,7 @@ h5 {
 
 .modal-content {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
