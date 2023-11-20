@@ -13,11 +13,12 @@
             <span>KotoPes</span>
         </div>
         <div Id="about">
+            <a href="#" title="Услуги" onclick="slowScroll('#services-bg')">Услуги</a>
+            <a href="#" title="О нас" onclick="slowScroll('#about-us')">О нас</a>
             <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
             <a href="#" title="Возможности" onclick="slowScroll('#price')">Стоимость</a>
             <a href="#" title="Преимущества" onclick="slowScroll('#overview')">Преимущества</a>
-            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
-            <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+            <a href="contacts.html" title="Контакты">Контакты</a>
         </div>
     </header>
     <div id="top">
@@ -37,7 +38,7 @@
             </div>
             <div class="services-card">
                 <img src="assets/images/c3.jpg">
-                <p>Вакцинаяция</p>
+                <p>Вакцинация</p>
             </div>
             <div class="services-card">
                 <img src="assets/images/c4.jpg">
@@ -159,6 +160,68 @@
             <button class="floating-button">Стоимость</button>
         </div>
     </div>
+    <script src="js/js.js"></script> <!--калькулятор-->
+    <div class="calc">
+        <div class="calc-form">
+            <p>Расчет стоимости проведения услуг</p>
+            <div><input type="text" id="shirina" value="" class="metr" placeholder="укажите возраст питомца"> <select
+                    id="cvet">
+                    <option value="cat">Коты и кошки</option>
+                    <option value="dog">Собаки</option>
+                    <option value="eczot">Экзотические животные</option>
+                    <option value="gryz">Грызуны</option>
+                    <option value="reptyl">Рептилии</option>
+                </select> <select id="type">
+                    <option value="">Кастрация кота</option>
+                    <option value="">Кастрация кобеля</option>
+                    <option value="">Ампутация конечности</option>
+                    <option value="">Удаление когтевых фаланг</option>
+                    <option value="">Перекрут желудка</option>
+                    <option value="">Операци на кишечнике</option>
+                    <option value="">Снятие забного камня</option>
+                    <option value="">Экстрация молочного зуба</option>
+                    <option value="">Стрижка кошки</option>
+                    <option value="">Стрижка собаки</option>
+                    <option value="">Мазок на вязку</option>
+                    <option value="">Биохимия мочи</option>
+                    <option value="">Тест на лямблиоз</option>
+                    <option value="">Тест на лейкоз</option>
+                    <option value="">Обрезка когтей</option>
+                    <option value="">Груминг частей тела</option>
+                    <option value="">Мультифел 4</option>
+                    <option value="">Вангард 7</option>
+                    <option value="">Фелоцел-4</option>
+                </select></div>
+            <div class="stoim"> <button class="stoim-btn" onclick="raschitat()">Рассчитать стоимость</button>
+                <div class="otvet" id="stoimost"></div>
+            </div>
+            <script type="text/javascript"> function raschitat() {
+                    shirina = document.getElementById('shirina').value;
+                    cvet = document.getElementById('cvet').value;
+                    type = document.getElementById('type').value;
+                    switch (cvet) {
+                        case "cat": cena = 1500; break;
+                        case "dog": cena = 800; break;
+                        case "eczot": cena = 4000; break;
+                        default: cena = 3000; break;
+                    };
+                    switch (type) {
+                        case "kom":
+                            cena2 = 3; break;
+                        case "jil":
+                            cena2 = 2; break;
+                        default:
+                            cena2 = 3; break;
+                    }
+                    if (shirina == "") {
+                        alert("Вы не заполнили поля");
+                    } else {
+                        stoimost = shirina * cena * cena2; document.getElementById('stoimost').innerHTML = "Стоимость от: " + stoimost + " p."
+                    }
+                } 
+            </script>
+        </div>
+    </div>
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">×</span>
@@ -188,8 +251,7 @@
 
             <h2>Груминг</h2><br>
             <p>Обрезка когтей — 250 ₽</p>
-            <p>Груминг частей тела — 200 ₽</p>
-            <p>Стрижка собаки — 2 000 ₽</p><br>
+            <p>Груминг частей тела — 200 ₽</p><br>
 
             <h2>Вакцинаяция</h2><br>
             <p>Мультифел 4 — 600 ₽</p>
@@ -202,23 +264,23 @@
         <h4>у нас все самое лучшее для ващих питомцев</h4>
 
         <div class="img">
-            <img src="assets/images/kotenok.png" alt="">
-            <span>Заботливые зооняни</span>
+            <img src="assets/images/p1.jpg" alt="">
+            <span>Дружественная помощь</span>
         </div>
 
         <div class="img">
-            <img src="assets/images/vetdog.png" alt="">
-            <span>Квалифицированные ветеринары</span>
+            <img src="assets/images/p2.jpg" alt="">
+            <span>Профессиональная команда</span>
         </div>
 
         <div class="img">
-            <img src="assets/images/cameracat.png" alt="">
-            <span>Видеонаблюдение</span>
+            <img src="assets/images/p3.jpg" alt="">
+            <span>Доступные цены</span>
         </div>
 
         <div class="img">
-            <img src="assets/images/photocat.png" alt="">
-            <span>Ежедневный фотоотчет</span>
+            <img src="assets/images/p4.jpg" alt="">
+            <span>Полный перечень услуг</span>
         </div>
     </div>
     <div id="contacts">
@@ -241,26 +303,15 @@
         <div>
             <span class="title">Оплата</span><br>
             <span class="heading">Как будет проходить оплата</span><br>
-            <p>Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем:
-
-                МИР;
-                VISA International;
-                Mastercard Worldwide
-                Оплату банковской картой Вы можете произвести на месте в момент доставки животного!</p>
-        </div>
-        <div>
-            <span class="title">Информация</span><br>
-            <span class="heading">Что входит в услуги отеля</span><br>
-            <p>Предоставляем услуги по проживанию питомцев на период отпуска, командировки, болезни, ремонта, переезда
-                владельца.
-                Наши гости — это котики, собачки мелких пород, кролики, грызуны, птицы, и рыбки.</p>
+            <p>
+                Оплату банковской картой Вы можете произвести после лечения животного!</p>
         </div>
         <div>
             <span class="title">Контакты</span><br>
             <span class="heading">Наши контакты</span><br>
-            <p>+79999999999 <br>
-                hofoan@outlook.com <br>
-                Ростов-на-Дону, пр. Коммунистический, 12</p>
+            <p>+7 (900) 800-55-55 <br>
+                kotopes@outlook.com <br>
+                г. Воронеж ул. Димитрова 77</p>
         </div>
     </div>
 

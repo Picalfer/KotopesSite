@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="assets/css/contacts.css" />
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div id="logo" onclick="slowScroll('#top')">
+                <p class="logo_text">KotoPes</p>
+            </div>
+            <div Id="about">
+                <a href="index.html" title="На главную">На главную</a>
+                <a href="index.html#services-bg" title="Услуги" onclick="slowScroll('#services-bg')">Услуги</a>
+                <a href="index.html#about-us" title="О нас" onclick="slowScroll('#about-us')">О нас</a>
+                <a href="index.html#main" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+                <a href="index.html#price" title="Возможности" onclick="slowScroll('#price')">Стоимость</a>
+                <a href="index.html#overview" title="Преимущества" onclick="slowScroll('#overview')">Преимущества</a>
+                <a href="contacts.html" title="Контакты">Контакты</a>
+            </div>
+        </header>
+        <div class="section-calend">
+            <div class="menu-block">
+                <nav class="menu-nav">
+                    <div class="calendar-wrapper"> <button id="btnPrev" type="button">Предыдущий</button> <button
+                            id="btnNext" type="button">Следующий</button>
+                        <div id="divCal"></div>
+                </nav> <a href="#" class="menu-btn"> <span></span> </a>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/calend.js"></script> <!--календарь-->
+        <div class="form">
+            <div class="contact-page">
+                <p>Связаться с нами</p>
+                <div class="contact-info">
+                    <div class="item"> <i class="icon"></i> <span>адрес:</span> г. Воронеж, ул. Димитрова, 77 </div>
+                    <div class="item"> <i class="icon"></i> <span>телефон</span> +7 (900) 800-55-55 </div>
+                    <div class="item"> <i class="icon"></i> <span>факс:</span> +7 (4732) 123-45-67 </div>
+                    <div class="item"> <i class="icon"></i> <span>почта:</span> vakulina_maria@gmail.ru </div>
+                    <div class="item"> <i class="icon"></i> <span>режим работы:</span> Пн - Вт: с 8:00 до 21:00 </div>
+                </div>
+                <form action="" class="contact-form"> <input type="text" class="textb" placeholder="Ваше имя" required>
+                    <input type="email" class="textb" placeholder="Ваша почта" required> <textarea
+                        placeholder="Ваше сообщение" required></textarea> <input type="submit" class="btn"
+                        value='Отправить'>
+                </form>
+            </div>
+        </div> <!--карта-->
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab16b0ecef91b88d589d6304b10b4f061daaeb154f05609e4fd6961efbbf29b3d&amp;width=1280&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div> <!--карта-->
+    </div> <!--главная--> <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="linia"> <!--время-->
+                    <div class="time">
+                        <div class="hours">г. Воронеж, ул. Димитрова, 77</div>
+                        <p>Адрес</p>
+                    </div> <!--время--> <!--иконки-->
+                    <div class="icons">
+                        <div class="icons-a">+7 (900) 800-55-55</div>
+                        <p>Телефон</p>
+                    </div> <!--иконки--> <!--контакты-->
+                    <div class="footer-contacts"> <a href="https://vk.com/idv_marmeladka" class="footer-button">
+                            Связаться
+                            Вконтакте </a> </div> <!--контакты-->
+                </div>
+            </div>
+            <div class="avtor">
+                <div class="line"></div>
+                <p>Вакулина Мария Юрьевна</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

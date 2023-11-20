@@ -134,8 +134,10 @@ header.fixed #logo {
     background-color: #f6f6f6;
     border-top: 2px solid silver;
     color: #484848;
+    margin-bottom: 30px;
     font-size: 1.3em;
 }
+
 
 #price div {
     width: 48%;
@@ -606,4 +608,85 @@ h5 {
 .portfolio-item:hover ul {
     opacity: 1;
     transition-delay: .5s;
+}
+
+.calc {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.calc-form {
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px rgb(148, 135, 98);
+    padding: 10px 10px 10px 30px;
+    height: 150px;
+    background-color: #F6F6F6;
+}
+
+.calc-form:hover {
+    box-shadow: 0px 0px 10px rgb(148, 135, 98);
+}
+
+.calc p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #242424;
+}
+
+.metr {
+    width: 23%;
+    height: 9px;
+    padding: 12px;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+select {
+    width: 30%;
+    height: 33px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+}
+
+.stoim {
+    display: inline-block;
+}
+
+.stoim-btn {
+    width: 200px;
+    height: 35px;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+    border-radius: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid rgb(0, 88, 88);
+    transition: .3s linear;
+    font-weight: 700;
+}
+
+.stoim:hover {
+    color: rgb(255, 233, 168);
+}
+
+.otvet {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #242424;
+    position: relative;
+    top: -28px;
+    left: 273px;
 }
